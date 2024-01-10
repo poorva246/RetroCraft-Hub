@@ -12,7 +12,7 @@ body {
   height: 100%;
   width: 100%;
   place-items: center;
-  background-color: #7facd8;}
+  background-color: whitesmoke;}
 ::selection {
   background: #12e8f0;
   color: #fff;
@@ -20,7 +20,7 @@ body {
 .wrapper {
   overflow: hidden;
   max-width: 390px;
-  background: #fff;
+  background: #004182;
   padding: 30px;
   border-radius: 5px;
 }
@@ -178,4 +178,11 @@ form .btn input[type="submit"] {
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
+}
+.title {
+  color: white;
+}
+.signup-link
+{
+  color: white;
 }
