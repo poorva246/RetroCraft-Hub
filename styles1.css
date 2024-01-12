@@ -1,4 +1,4 @@
-* * {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -6,18 +6,33 @@
 
 /* Body Styling */
 body {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', 'sans-serif';
   background-size: cover;
   background-repeat: no-repeat;
   color: black;
+  overflow-x: hidden;
   line-height: 1.6;
+  background-image: url('https://desktop.github.com/images/star-bg.svg'); /DARK/
+  background-color: #242424 !important;   /DARK/
 }
-
+.dark{
+  background-color: white !important;
+  background-image: none;
+}
+*{
+  color: white;
+}
 /* Header Styling */
 header {
+  backdrop-filter: blur(10px);
   padding: 20px;
-  background: #004182; /* Transparent black background */
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background-color: #1b1b1bdb; /DARK/
+}
+.darkheader{
+  background: #004182;
 }
 
 nav {
@@ -27,6 +42,27 @@ nav {
   max-width: 960px;
   margin: 0 auto;
 }
+
+.mode{
+  text-align: center;
+  font-weight: bold;
+  margin-top: -20px;
+  border-radius: 999px;
+  border: 2px solid lightblue;
+  background-color: #031e3a;  /DARK/
+  color: white;               /DARK/
+}
+
+.darkmode{
+  background-color: whitesmoke;
+  color: black;
+}
+
+/* .mode:focus{
+  border: 2px solid rgb(1, 1, 108);
+  background-color:blue;
+  color: white;
+} */
 
 .nav-links li {
   display: inline;
@@ -45,7 +81,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: black; /* Yellow hover color */
+  color: rgb(255, 187, 187); /* Yellow hover color */
 }
 
 .logo h1 {
@@ -88,19 +124,18 @@ button {
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: rgb(209, 100, 100);
-}
-
 /* Footer Styling */
 footer {
-  background: #004182;
   color: #fff;
   text-align: center;
   padding: 10px 0;
   margin-top: 4em;
   bottom: 0;
   width: 100%;
+  background-color: #1b1b1bdb; /DARK/
+}
+.darkfooter{
+  background: #004182;
 }
 h3 {
   font-size: 30px;
@@ -119,7 +154,7 @@ display: none;
 position: absolute;
 top: 100%;
 left: 0;
-background-color: #004182 !important;
+background-color: #031e3a !important; /* DARK */
 padding: 5px 0;
 border-radius: 4px;
 font-size: 8px;
@@ -127,6 +162,9 @@ text-align: left;
 color: black;
 margin-right: 2px;
 margin-right: 1px;
+}
+.darkdropdown-menu{
+  background-color: #004182 !important;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -138,7 +176,7 @@ display: block;
 }
 .text
 {
-  color: black;
+  color: white;
 }
 .para
 {
@@ -155,29 +193,19 @@ display: block;
  margin-bottom: 40px;
  float: left;
 }
-.head
+.head, .signinbtn, .footerpara
 {
-  color: white;
+  color: white !important;
 }
-
-
-
-
-
-
-
-
 
 :root {
   --sz: 2.5vmin;
 }	
-
 .content {
   position: relative;
   width: calc(var(--sz) * 4);
   height: calc(var(--sz) * 2);
   margin-left: 30px;
-  /* margin-left: 40vw; */
 }
 .rightnav{
   display: flex;
