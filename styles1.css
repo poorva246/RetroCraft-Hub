@@ -12,8 +12,8 @@ body {
   color: black;
   overflow-x: hidden;
   line-height: 1.6;
-  background-image: url('https://desktop.github.com/images/star-bg.svg'); /DARK/
-  background-color: #242424 !important;   /DARK/
+  background-image: url('https://desktop.github.com/images/star-bg.svg');
+  background-color: #242424 !important;   
 }
 .dark{
   background-color: white !important;
@@ -29,7 +29,7 @@ header {
   position: fixed;
   top: 0px;
   width: 100%;
-  background-color: #1b1b1bdb; /DARK/
+  background-color: #1b1b1bdb;  
 }
 .darkheader{
   background: #004182;
@@ -49,8 +49,8 @@ nav {
   margin-top: -20px;
   border-radius: 999px;
   border: 2px solid lightblue;
-  background-color: #031e3a;  /DARK/
-  color: white;               /DARK/
+  background-color: #031e3a;   
+  color: white;                
 }
 
 .darkmode{
@@ -132,7 +132,7 @@ footer {
   margin-top: 4em;
   bottom: 0;
   width: 100%;
-  background-color: #1b1b1bdb; /DARK/
+  background-color: #1b1b1bdb;  
 }
 .darkfooter{
   background: #004182;
